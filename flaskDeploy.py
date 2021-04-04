@@ -14,6 +14,10 @@ class ParameterSchema(Schema):
     area = fields.Integer(required=True)
     old = fields.Integer(required=True)
     floor = fields.Integer(required=True)
+    area_sqft = fields.Integer(required=True)
+    place = fields.Integer(required=True)
+    yearsOld = fields.Integer(required=True)
+    totalFloor = fields.Integer(required=True)
 
 
 @app.route('/')
