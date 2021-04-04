@@ -37,12 +37,12 @@ def predict():
         return jsonify(err.messages), 400
 
     # Convert request body back to JSON str
-    location = reqParam['location']
+    area_sqft = reqParam['sqft']
+    place = reqParam['place']
+    yearsOld = reqParam['yearsOld']
+    totalFloor = reqParam['totalFloor']
     bhk = reqParam['bhk']
-    furnishing = reqParam['furnishing']
-    area = reqParam['area']
-    old = reqParam['old']
-    floor = reqParam['floor']
+
     
     returnJson = {}
     # predicting from model
